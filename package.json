@@ -1,0 +1,22 @@
+{
+  "name": "git-report",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "report": "func() { ./src/main.sh \"$1\" > report/result; }; func",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "@mdi/font": "^5.0.45",
+    "js-yaml": "^3.13.1",
+    "parcel-bundler": "^1.12.4",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
+    "vuetify": "^2.2.19"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.1.1",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
